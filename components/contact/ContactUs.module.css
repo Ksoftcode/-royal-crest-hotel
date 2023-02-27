@@ -1,0 +1,106 @@
+.contactContainer {
+  text-align: center;
+  padding-bottom: 51.3px;
+  margin: auto;
+}
+.headingWrapper {
+  padding: 90px 0 52px 0;
+  background-color: var(--col-primary);
+  margin-bottom: 50px;
+}
+.heading {
+  color: white;
+}
+.title {
+  margin-bottom: 0.1em;
+  text-align: center;
+}
+.intro {
+  margin: auto auto 6.68em auto;
+}
+.contactWrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.details {
+  font-size: 0.5rem;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 2em;
+}
+.phone,
+.address,
+.emailAddress {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  align-items: flex-start;
+  margin-bottom: 1em;
+}
+.link {
+  font-size: 0.75rem;
+  line-height: 1.6;
+}
+.labelGroup {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5em;
+  gap: 0.5em;
+}
+.phoneNumbers {
+  display: flex;
+  flex-direction: column;
+}
+.labelIcon {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.contactLabel {
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  .contactContainer {
+    padding-bottom: 104px;
+  }
+  .contactWrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 10px;
+  }
+
+  .details {
+    font-size: 1rem;
+  }
+  .headingWrapper {
+    padding: 150px 0 80px 0;
+  }
+  .link {
+    font-size: 0.875rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .contactContainer {
+    padding-bottom: 175px;
+  }
+  .headingWrapper {
+    padding: 175px 0 160px 0;
+    margin-bottom: 140px;
+  }
+  .details {
+    font-size: 1.675rem;
+  }
+  .button {
+    margin-top: 52px;
+    margin-bottom: 52px;
+  }
+}

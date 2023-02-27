@@ -1,0 +1,133 @@
+.sectionContainer {
+  padding-bottom: 44.8px;
+}
+.sectionHeader {
+  text-align: center;
+  margin-top: 1.35em;
+  margin-bottom: 0.483em;
+}
+.intro {
+  margin-bottom: 3.25em;
+  text-align: center;
+}
+.aboutCard {
+  margin-bottom: 3.25em;
+}
+.aboutCardItem {
+  margin-bottom: 2em;
+  text-align: center;
+  background-color: #eee;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+.aboutDescription {
+  padding: 0 1em 2em 1em;
+}
+.imgWrapper {
+  height: 290px;
+  margin-bottom: 1em;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  overflow: hidden;
+}
+.img {
+  height: 100%;
+}
+.contentGroup {
+  border-left: 1px solid var(--col-primary);
+  padding-left: 1em;
+}
+.title {
+  margin-top: 0.3em;
+}
+.description,
+.locationColumns {
+  margin-top: 1em;
+  margin-bottom: 3.25em;
+}
+.locationWrapper {
+  background-color: #eee;
+  padding: 2em 0;
+}
+.locationWrapper,
+.visionWrapper,
+.missionWrapper {
+  text-align: center;
+  margin: auto;
+}
+
+.locationColumns > :first-child {
+  margin-bottom: 1em;
+}
+.branch,
+.address {
+  margin-bottom: 0.3em;
+}
+.contactPhone {
+  display: flex;
+  justify-content: center;
+  gap: 0.3em;
+  align-items: center;
+}
+.number {
+  display: inline;
+  font-size: 0.875rem;
+  color: var(--col-primary);
+  line-height: 1.5;
+}
+
+/* Media Query */
+@media (min-width: 600px) {
+  .sectionContainer {
+    padding-bottom: 70px;
+  }
+  .number {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 768px) {
+  .sectionContainer {
+    padding-bottom: 89.6px;
+  }
+  .aboutCard {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+  }
+  .locationColumns {
+    display: flex;
+    gap: 1em;
+    justify-content: space-between;
+  }
+  .locationColumns > .locationItem {
+    flex-basis: 50%;
+  }
+}
+@media (min-width: 1024px) {
+  .sectionContainer {
+    padding-bottom: 119px;
+  }
+}
+@media (min-width: 1280px) {
+  .sectionContainer {
+    padding-bottom: 150px;
+  }
+
+  .aboutCard {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em;
+  }
+  .description {
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+@media (min-width: 1920px) {
+  .sectionContainer {
+    padding-bottom: 224px;
+  }
+}

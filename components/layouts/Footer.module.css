@@ -1,0 +1,110 @@
+.footerContainer {
+  background-color: var(--col-primary);
+  min-height: fit-content;
+  -webkit-clip-path: polygon(
+    50% 16%,
+    57% 19%,
+    100% 20%,
+    100% 100%,
+    0 100%,
+    0 20%,
+    42% 19%
+  );
+  clip-path: polygon(
+    50% 16%,
+    57% 19%,
+    100% 20%,
+    100% 100%,
+    0 100%,
+    0 20%,
+    42% 19%
+  );
+  color: white;
+  padding: 27.6px 0 14.4px 0;
+}
+.footerItemsWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 8em 0 1em 0;
+}
+.socialsWrapper {
+  display: flex;
+  justify-content: center;
+}
+.socialsGroup {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2em;
+}
+.socialList {
+  display: inline-flex;
+  justify-content: center;
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+.detailsWrapper {
+  color: white;
+}
+.royalCrest {
+  font-size: 0.875rem;
+  margin: 2em 0 1em 0;
+  color: white;
+  font-weight: 700;
+  text-align: center;
+}
+.addressContainer {
+  margin-bottom: 1em;
+}
+.locationInfo {
+  color: white;
+  text-align: center;
+}
+.contactInfo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3em;
+}
+.contactIcon,
+.contactGroup {
+  margin-right: 0.3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.copyright {
+  color: white;
+  font-size: 0.75rem;
+}
+
+@media (min-width: 768px) {
+  .footerContainer {
+    background-color: var(--col-primary);
+    min-height: fit-content;
+    -webkit-clip-path: polygon(
+      50% 9%,
+      57% 19%,
+      100% 20%,
+      100% 100%,
+      0 100%,
+      0 20%,
+      42% 19%
+    );
+    clip-path: polygon(
+      50% 9%,
+      57% 19%,
+      100% 20%,
+      100% 100%,
+      0 100%,
+      0 20%,
+      42% 19%
+    );
+    color: white;
+    padding: 27.6px 0 14.4px 0;
+  }
+}

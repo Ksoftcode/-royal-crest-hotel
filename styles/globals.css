@@ -1,0 +1,259 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Seaweed+Script&family=Style+Script&display=swap");
+
+/* CSS Variables */
+:root {
+  --col-primary: rgba(20, 39, 74, 1);
+  --col-secondary: #f8d084;
+  --f-h1-sm: 1.75rem;
+  --f-h1-tab: 2.25rem;
+  --f-h1-tab-l: 2.5rem;
+  --f-h1-xl: 3.125rem;
+  --f-h1-xxxl: 3.75rem;
+  --f-body-sm: 0.75rem;
+  --f-body-tab: 0.875rem;
+  --f-body-xl: 1rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* RESET */
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+code,
+del,
+dfn,
+em,
+img,
+q,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+em {
+  font-style: italic;
+}
+
+strong {
+  font-weight: bold;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+/* /END RESET */
+
+body {
+  font-family: "Spline Sans", sans-serif;
+}
+
+a img {
+  border: none;
+  outline: none;
+}
+
+/* remove dotted lines on some links in FF browser */
+a,
+a:active,
+a:visited,
+a img {
+  outline: none;
+}
+
+h1 {
+  font-size: var(--f-h1-sm);
+  line-height: 1.2;
+  color: var(--col-primary);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+h2 {
+  /* font-size: 1.375rem; */
+  font-size: 1.5rem;
+  line-height: 1.4;
+  color: var(--col-primary);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+h3 {
+  font-size: 1.25rem;
+  /* font-size: 1.1875rem; */
+  line-height: 1.2;
+  color: var(--col-primary);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+h4 {
+  font-size: 1rem;
+  /* font-size: 1.1875rem; */
+  line-height: 1.2;
+  color: var(--col-primary);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+button {
+  outline: none;
+  border: 0;
+  background-color: transparent;
+  font-size: 0.75rem;
+  color: var(--col-primary);
+}
+p,
+label,
+address {
+  font-size: 0.875rem;
+  color: var(--col-primary);
+  line-height: 1.5;
+}
+p {
+  line-height: 1.5;
+}
+@media (min-width: 480px) {
+  p,
+  button,
+  label,
+  address {
+    font-size: var(--f-body-sm);
+    /* font-size: 0.4rem; */
+  }
+}
+@media (min-width: 600px) {
+  h1 {
+    font-size: var(--f-h1-tab);
+    font-weight: 700;
+  }
+  h2 {
+    font-size: 1.625rem;
+  }
+  h3 {
+    font-size: 1.25rem;
+  }
+  p,
+  button,
+  label,
+  address {
+    font-size: var(--f-body-tab);
+  }
+}
+@media (min-width: 768px) {
+  h1 {
+    font-weight: 700;
+  }
+  p,
+  button,
+  label {
+    font-size: var(--f-body-tab);
+  }
+}
+@media (min-width: 900px) {
+  h1 {
+    font-size: var(--f-h1-tab-l);
+    font-weight: 700;
+  }
+  p,
+  button,
+  label,
+  address {
+    font-size: var(--f-body-tab-l);
+  }
+}
+@media (min-width: 1024px) {
+  h1 {
+    font-weight: 700;
+  }
+  p,
+  button,
+  label,
+  address {
+    font-size: var(--f-body-xl);
+  }
+}
+@media (min-width: 1280px) {
+  h1 {
+    font-size: var(--f-h1-xl);
+    font-weight: 700;
+  }
+  h2 {
+    font-size: 2.1875rem;
+  }
+  h3 {
+    font-size: 1.875rem;
+  }
+  p,
+  button,
+  label {
+    font-size: var(--f-body-xl);
+  }
+}
+@media (min-width: 1440px) {
+  h1 {
+    font-size: var(--f-h1-xl);
+    font-weight: 700;
+  }
+  p,
+  button,
+  label {
+    font-size: var(--f-body-xl);
+  }
+}
+
+/* Facility Page Hero Carousel */
+
+.splide--slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
